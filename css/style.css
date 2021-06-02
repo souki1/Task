@@ -50,20 +50,34 @@ td{
     display:none;
 }
 .radio__label{
-padding: 8px 10px;
+/* padding: 8px 10px; */
 font-size: 1em;
 color:blue;
 background:transparent;
 cursor:pointer;
-border:1px solid blue;
-padding: 1px 15px;
+/* border:1px solid blue; */
+padding: 1px 1px;
 font-weight:500;
-border-radius:.25rem;
+/* border-radius:.25rem; */
 }
+td {
+    justify-content: center;
+}
+.button{
+    display:flex;
+    justify-content: center;
+    border: 1px solid blue;
+    margin:0;
 
+    position:relative;
+    padding:0;
+    height: 30px;
+    width:80px;
+}
 
 .radio__label:not(:last-of-type){
     border-right: 1px solid blue;
+    height: 100%;
 }
 .radio__input:checked + .radio__label{
 background-color: blue;
