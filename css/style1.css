@@ -41,12 +41,15 @@ background: #f2f2f6;
 }
 td .text p{
     padding:0%;
-    margin:0;
+    margin-left:50px;
+    display:flex;
+    text-align: flex-start;
     font-weight:normal;
     color:#707C96;
     text-transform: underline;
 }
 td .text p:nth-child(1){
+    margin-bottom: 10px;
     text-decoration: underline;
 }
 
@@ -56,12 +59,26 @@ th{
     color: #707C96;
     font-size: 14px;
 }
+th:nth-child(1){
+    /* display:flex;
+    margin-left:50px; */
+}
+
+.table td, .table th{
+    border-top: 0px;
+}
+
+.color .table thead th{
+
+display: inline-flex ;
+border-bottom: 02px solid red;
+}
 
 .radio__input{
     display:none;
 }
 .radio__label{
-    padding: 5px 18px;
+    padding: 5px 20px;
     justify-content:center;
     align-items: center;
     color:blue;
@@ -72,7 +89,7 @@ th{
     transition: .2s ease-in-out;
 }
 .radio__label:not(:last-of-type){
-    border-right: 1px solid blue;
+    border-right: 2px solid blue;
     height: 100%;
 }
 
@@ -87,7 +104,7 @@ th{
     overflow:hidden;
     border-radius: 8px;
    
-    border:1px solid blue;
+    border:2px solid blue;
     
 }
 #submit{
